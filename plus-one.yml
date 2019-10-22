@@ -1,0 +1,8 @@
+provider:
+  name: faas
+  gateway: http://ip172-18-0-3-bmkms6mdo98g00fescng-8080.direct.labs.play-with-docker.com
+functions:
+  plus-one:
+    lang: dockerfile
+    handler: ./plus-one
+    image: plus-one:latest
