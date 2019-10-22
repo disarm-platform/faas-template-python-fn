@@ -13,9 +13,7 @@ ENV PATH=$PATH:/home/app/.local/bin
 
 WORKDIR /home/app/
 
-COPY index.py           .
-COPY requirements.txt   .
-RUN pip install -r requirements.txt
+COPY index.py .
 
 RUN mkdir -p function
 RUN touch ./function/__init__.py
@@ -25,7 +23,7 @@ RUN pip install --user -r requirements.txt
 
 WORKDIR /home/app/
 
-COPY function           function
+COPY function function
 ENV fprocess="python index.py"
 EXPOSE 8080
 

@@ -7,16 +7,15 @@ This contains a complete sample function, wrapped ready for deployment on OpenFa
 There are three levels, and the folder structure looks like:
 
 ```
-.
 ├── README.md <-- The file you're reading
 ├── SPECS.md <-- Specifications for the function
 ├── plus-one <-- Folder usually named the same as the function
-│   ├── Dockerfile <-- Usually no need to edit, can break deploument
+│   ├── Dockerfile <-- Usually no need to edit, can break deployment
 │   ├── function <-- Usually called `function`, contains custom code
 │   │   ├── __init__.py <-- Standard Python
 │   │   ├── handler.py <-- Main piece of custom code
-│   │   └── preprocess_params.py <-- Include here any checks or shaping of inpt
-│   ├── index.py <-- Wrapper code, don't usually need to edit
-│   └── requirements.txt <-- Standard Python `pip` requirements
+│   │   ├── preprocess_params.py <-- Include here any checks or shaping of input
+│   |   └── requirements.txt <-- Standard Python `pip` requirements
+│   └── index.py <-- Wrapper code, don't usually need to edit
 └── stack.yml <-- Configuration file for deploying on OpenFaas
 ```
