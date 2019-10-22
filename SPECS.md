@@ -14,4 +14,4 @@ A JSON object containing:
 
 ## Response
 
-`number` plus 1.
+- the value of `number` plus 1.
