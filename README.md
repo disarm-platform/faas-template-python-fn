@@ -15,7 +15,7 @@ There are three levels, and the folder structure looks like:
 │   ├── function <-- Usually called `function`, contains custom code
 │   │   ├── __init__.py <-- Standard Python
 │   │   ├── handler.py <-- Main piece of custom code
-│   │   └── preprocess_params.py <-- Include here any checks or shaping of inpt
+│   │   └── preprocess_params.py <-- Include here any checks or shaping of input
 │   ├── index.py <-- Wrapper code, don't usually need to edit
 │   └── requirements.txt <-- Standard Python `pip` requirements
 └── stack.yml <-- Configuration file for deploying on OpenFaas
