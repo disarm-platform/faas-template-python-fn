@@ -2,7 +2,7 @@
 
 This contains a complete sample function, wrapped ready for deployment on OpenFaas. Check `SPECS.md` for details of the algorithm. You can use this repo as either a sample or a start-point for your own function. 
 
-*TLDR*: Most of the custom functionality is inside `handler.py`.
+*TLDR*: Most of the custom functionality is inside the `function` folder, and especially in `handler.py`.
 
 There are three levels, and the folder structure looks like:
 
@@ -15,7 +15,8 @@ There are three levels, and the folder structure looks like:
 │   │   ├── __init__.py <-- Standard Python
 │   │   ├── handler.py <-- Main piece of custom code
 │   │   ├── preprocess_params.py <-- Include here any checks or shaping of input
-│   |   └── requirements.txt <-- Standard Python `pip` requirements
-│   └── index.py <-- Wrapper code, don't usually need to edit
+│   |   └── requirements.txt <-- Custom Python `pip` requirements
+│   ├── index.py <-- Wrapper code, don't usually need to edit
+│   └── requirements.txt <-- Python `pip` requirements for the wrapper code, usually don't need to edit
 └── stack.yml <-- Configuration file for deploying on OpenFaas
 ```
